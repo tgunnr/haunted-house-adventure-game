@@ -25,7 +25,9 @@ imgArray[5] = new Image()
 imgArray[5].src = '../assets/img/library.png'
 
 imgArray[6] = new Image()
-imgArray[6].src = '../assets/img/fallingBooks.png'
+imgArray[6].src = '../assets/img/kitchen.png'
+
+
 
 // Button/ story choices
 
@@ -82,6 +84,15 @@ const prompts = [
           {text: 'Search for a secret passageway', navigateToIdx: 0},
           {text: 'Investigate the bookshelves', navigateToIdx: 0},
           {text: 'Investigate the fireplace', navigateToIdx: 0}
+        ]
+    },
+    {
+        id: 6,
+        question: 'The kitchen is somehow both smaller and larger than you were expecting. What is even more surprising is the availability of fresh food. Now who baked the pie on the counter?',
+        options: [
+          {text: 'Eat the pie', navigateToIdx: 0},
+          {text: 'Investigate the pantry', navigateToIdx: 0},
+          {text: 'Open the fridge', navigateToIdx: 0}
         ]
     }
   ]
