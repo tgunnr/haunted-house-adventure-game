@@ -13,7 +13,7 @@ img {
     border: 4px solid rgb(68, 59, 27)
 }
 
-.mansion {
+.mainImage {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -34,4 +34,10 @@ img {
 
 .btn:hover {
     background-color: aquamarine;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: rgb(5, 14, 48);
 }
