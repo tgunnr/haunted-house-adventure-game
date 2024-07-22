@@ -21,6 +21,12 @@ imgArray[3].src = '../assets/img/firstCarEscape.png'
 imgArray[4] = new Image()
 imgArray[4].src = '../assets/img/stairs.png'
 
+imgArray[5] = new Image()
+imgArray[5].src = '../assets/img/library.png'
+
+imgArray[6] = new Image()
+imgArray[6].src = '../assets/img/fallingBooks.png'
+
 // Button/ story choices
 
 const prompts = [
@@ -66,7 +72,16 @@ const prompts = [
         options: [
           {text: 'Master Bedroom', navigateToIdx: 7},
           {text: 'Guest Room', navigateToIdx: 8},
-          {text: 'End of Hallway', navigateToIdx: 9}
+          {text: 'End of hallway', navigateToIdx: 9}
+        ]
+    },
+    {
+        id: 5,
+        question: 'As you enter the library, you are filled with a sense of bewilderment over its vast collection. What will you do while you are here?',
+        options: [
+          {text: 'Search for a secret passageway', navigateToIdx: 0},
+          {text: 'Investigate the bookshelves', navigateToIdx: 0},
+          {text: 'Investigate the fireplace', navigateToIdx: 0}
         ]
     }
   ]
