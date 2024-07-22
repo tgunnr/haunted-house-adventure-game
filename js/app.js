@@ -32,7 +32,8 @@ imgArray[6].src = '../assets/img/kitchen.png'
 imgArray[7] = new Image()
 imgArray[7].src = '../assets/img/masterBedroom.png'
 
-
+imgArray[8] = new Image()
+imgArray[8].src = '../assets/img/guestRoom.png'
 
 // Button/ story choices
 
