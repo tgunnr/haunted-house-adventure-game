@@ -2,21 +2,21 @@ console.log('oh no')
 
 // Image Array
 
-var mainImage = document.getElementById
+// var mainImage = document.getElementById
 
-var imgArray = new Array()
+// var imgArray = new Array()
 
-imgArray[0] = new Image()
-imgArray[0].src = '../assets/img/hauntedHouse.png'
+// imgArray[0] = new Image()
+// imgArray[0].src = '../assets/img/hauntedHouse.png'
 
-imgArray[1] = new Image()
-imgArray[1].src = '../assets/img/enterMansion.png'
+// imgArray[1] = new Image()
+// imgArray[1].src = '../assets/img/enterMansion.png'
 
-imgArray[2] = new Image()
-imgArray[2].src = '../assets/img/firstEscape.png'
+// imgArray[2] = new Image()
+// imgArray[2].src = '../assets/img/firstEscape.png'
 
-imgArray[3] = new Image()
-imgArray[3].src = '../assets/img/firstCarEscape.png'
+// imgArray[3] = new Image()
+// imgArray[3].src = '../assets/img/firstCarEscape.png'
 
 // Button/ story choices
 
@@ -32,29 +32,29 @@ const prompts = [
     },
     {
       id: 1,
-      question: "You've entered the mansion to find your missing partner. Where will you go first?",
+      question: "You have entered the mansion to find your missing partner. Where will you go first?",
       options: [
-        {text: 'Up the stairs', navigateToIdx: 1},
-        {text: 'Library', navigateToIdx: 2},
-        {text: 'Kitchen', navigateToIdx: 3}
+        {text: 'Stairs', navigateToIdx: 4},
+        {text: 'Library', navigateToIdx: 5},
+        {text: 'Kitchen', navigateToIdx: 6}
       ]
     },
     {
       id: 2,
-      question: 'You chose right',
+      question: "You have chosen the logical option and decided it was not worth the risk of what may lie inside, but in your haste as you were leaving the mansion, you did not notice that car coming for you. What a shame.",
       options: [
-        {text: 'Opt A', navigateToIdx: 1},
-        {text: 'Opt B', navigateToIdx: 2},
-        {text: 'Opt C', navigateToIdx: 3}
+        {text: 'Try', navigateToIdx: 0},
+        {text: 'Again', navigateToIdx: 0},
+        {text: '?', navigateToIdx: 0}
       ]
     },
     {
       id: 3,
       question: 'You chose forward',
       options: [
-        {text: 'Opt A', navigateToIdx: 1},
-        {text: 'Opt B', navigateToIdx: 2},
-        {text: 'Opt C', navigateToIdx: 3}
+        {text: 'Try', navigateToIdx: 0},
+        {text: 'Again', navigateToIdx: 0},
+        {text: '?', navigateToIdx: 0}
       ]
     },
   ]
@@ -65,6 +65,8 @@ const prompts = [
   const buttonC = document.querySelector('#btn3')
   
   buttonA.addEventListener('click', handleClickButtonA)
+  buttonB.addEventListener('click', handleClickButtonB)
+  buttonC.addEventListener('click', handleClickButtonC)
   
   let currPromptIdx
   let currPrompt 
@@ -86,6 +88,18 @@ const prompts = [
   
   function handleClickButtonA() {
     currPromptIdx = currPrompt.options[0].navigateToIdx
+    currPrompt = prompts[currPromptIdx]
+    render()
+  }
+
+  function handleClickButtonB() {
+    currPromptIdx = currPrompt.options[1].navigateToIdx
+    currPrompt = prompts[currPromptIdx]
+    render()
+  }
+
+  function handleClickButtonC() {
+    currPromptIdx = currPrompt.options[2].navigateToIdx
     currPrompt = prompts[currPromptIdx]
     render()
   }
