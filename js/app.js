@@ -32,11 +32,11 @@ const prompts = [
     },
     {
       id: 1,
-      question: '',
+      question: "You've entered the mansion to find your missing partner. Where will you go first?",
       options: [
-        {text: 'Opt A', navigateToIdx: 1},
-        {text: 'Opt B', navigateToIdx: 2},
-        {text: 'Opt C', navigateToIdx: 3}
+        {text: 'Up the stairs', navigateToIdx: 1},
+        {text: 'Library', navigateToIdx: 2},
+        {text: 'Kitchen', navigateToIdx: 3}
       ]
     },
     {
