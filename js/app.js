@@ -1,6 +1,6 @@
 console.log('oh no')
 
-// Images
+// Image Array
 
 var mainImage = document.getElementById
 
@@ -12,6 +12,9 @@ imgArray[0].src = '../assets/img/hauntedHouse.png'
 imgArray[1] = new Image()
 imgArray[1].src = '../assets/img/firstEscape.png'
 
+imgArray[2] = new Image()
+imgArray[2].src = '../assets/img/firstCarEscape.png'
+
 // Button/ story choices
 
 const prompts = [
@@ -21,12 +24,12 @@ const prompts = [
       options: [
         {text: 'Enter', navigateToIdx: 1},
         {text: 'Leave', navigateToIdx: 2},
-        {text: 'Reset', navigateToIdx: 0}
+        {text: 'Run Away', navigateToIdx: 3}
       ]
     },
     {
       id: 1,
-      question: 'You chose left',
+      question: '',
       options: [
         {text: 'Opt A', navigateToIdx: 1},
         {text: 'Opt B', navigateToIdx: 2},
