@@ -107,9 +107,9 @@ const prompts = [
         id: 7,
         question: 'At one point the master bedroom was a sight to behold, unfortunately that time has long since passed. What secrets lie waiting for you?',
         options: [
-          {text: 'Enter', navigateToIdx: 0},
-          {text: 'Leave', navigateToIdx: 0},
-          {text: 'Run Away', navigateToIdx: 0}
+          {text: 'Enter the bathroom', navigateToIdx: 0},
+          {text: 'Pickup the diary on the bed', navigateToIdx: 0},
+          {text: 'Open the balcony', navigateToIdx: 0}
         ]
     }
   ]
@@ -118,10 +118,13 @@ const prompts = [
   const buttonA = document.querySelector('#btn1')
   const buttonB = document.querySelector('#btn2')
   const buttonC = document.querySelector('#btn3')
+  const resetButton = document.querySelector('#reset')
   
   buttonA.addEventListener('click', handleClickButtonA)
   buttonB.addEventListener('click', handleClickButtonB)
   buttonC.addEventListener('click', handleClickButtonC)
+  resetButton.addEventListener('click', handleClickReset)
+
   
   let currPromptIdx
   let currPrompt 
@@ -157,4 +160,8 @@ const prompts = [
     currPromptIdx = currPrompt.options[2].navigateToIdx
     currPrompt = prompts[currPromptIdx]
     render()
+  }
+
+  function handleClickReset() {
+    init()
   }
