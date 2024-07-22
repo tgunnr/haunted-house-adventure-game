@@ -35,6 +35,9 @@ imgArray[7].src = '../assets/img/masterBedroom.png'
 imgArray[8] = new Image()
 imgArray[8].src = '../assets/img/guestRoom.png'
 
+imgArray[9] = new Image()
+imgArray[9].src = '../assets/img/abyss.png'
+
 // Button/ story choices
 
 const prompts = [
@@ -112,7 +115,25 @@ const prompts = [
           {text: 'Pickup the diary on the bed', navigateToIdx: 0},
           {text: 'Open the balcony', navigateToIdx: 0}
         ]
-    }
+    },
+    {
+        id: 8,
+        question: 'Are you ready to enter?',
+        options: [
+          {text: 'Enter', navigateToIdx: 1},
+          {text: 'Leave', navigateToIdx: 2},
+          {text: 'Run Away', navigateToIdx: 3}
+        ]
+      },
+      {
+        id: 9,
+        question: 'Are you ready to enter?',
+        options: [
+          {text: 'Enter', navigateToIdx: 1},
+          {text: 'Leave', navigateToIdx: 2},
+          {text: 'Run Away', navigateToIdx: 3}
+        ]
+      },
   ]
   
   const questionEl = document.querySelector('#question')
