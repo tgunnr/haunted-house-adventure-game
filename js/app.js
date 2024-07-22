@@ -2,21 +2,24 @@ console.log('oh no')
 
 // Image Array
 
-// var mainImage = document.getElementById
+var mainImage = document.getElementById
 
-// var imgArray = new Array()
+var imgArray = new Array()
 
-// imgArray[0] = new Image()
-// imgArray[0].src = '../assets/img/hauntedHouse.png'
+imgArray[0] = new Image()
+imgArray[0].src = '../assets/img/hauntedHouse.png'
 
-// imgArray[1] = new Image()
-// imgArray[1].src = '../assets/img/enterMansion.png'
+imgArray[1] = new Image()
+imgArray[1].src = '../assets/img/enterMansion.png'
 
-// imgArray[2] = new Image()
-// imgArray[2].src = '../assets/img/firstEscape.png'
+imgArray[2] = new Image()
+imgArray[2].src = '../assets/img/firstEscape.png'
 
-// imgArray[3] = new Image()
-// imgArray[3].src = '../assets/img/firstCarEscape.png'
+imgArray[3] = new Image()
+imgArray[3].src = '../assets/img/firstCarEscape.png'
+
+imgArray[4] = new Image()
+imgArray[4].src = '../assets/img/stairs.png'
 
 // Button/ story choices
 
@@ -57,6 +60,15 @@ const prompts = [
         {text: '?', navigateToIdx: 0}
       ]
     },
+    {
+        id: 4,
+        question: 'The stairs were old and decrepit. Small wonder how they have yet to collapse. You ponder as to which room you should enter first.',
+        options: [
+          {text: 'Master Bedroom', navigateToIdx: 7},
+          {text: 'Guest Room', navigateToIdx: 8},
+          {text: 'End of Hallway', navigateToIdx: 9}
+        ]
+    }
   ]
   
   const questionEl = document.querySelector('#question')
