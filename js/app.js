@@ -27,6 +27,11 @@ imgArray[5].src = '../assets/img/library.png'
 imgArray[6] = new Image()
 imgArray[6].src = '../assets/img/kitchen.png'
 
+// Stairs pathway img assets
+
+imgArray[7] = new Image()
+imgArray[7].src = '../assets/img/masterBedroom.png'
+
 
 
 // Button/ story choices
@@ -93,6 +98,18 @@ const prompts = [
           {text: 'Eat the pie', navigateToIdx: 0},
           {text: 'Investigate the pantry', navigateToIdx: 0},
           {text: 'Open the fridge', navigateToIdx: 0}
+        ]
+    },
+
+    // Stairs ending pathway
+
+    {
+        id: 7,
+        question: 'At one point the master bedroom was a sight to behold, unfortunately that time has long since passed. What secrets lie waiting for you?',
+        options: [
+          {text: 'Enter', navigateToIdx: 0},
+          {text: 'Leave', navigateToIdx: 0},
+          {text: 'Run Away', navigateToIdx: 0}
         ]
     }
   ]
