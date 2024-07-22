@@ -10,7 +10,7 @@ imgArray[0] = new Image()
 imgArray[0].src = '../assets/img/hauntedHouse.png'
 
 imgArray[1] = new Image()
-imgArray[1].src = '..assets/img/enterMasnion.png'
+imgArray[1].src = '../assets/img/enterMansion.png'
 
 imgArray[2] = new Image()
 imgArray[2].src = '../assets/img/firstEscape.png'
