@@ -50,7 +50,7 @@ const prompts = [
     },
     {
       id: 3,
-      question: 'You chose forward',
+      question: 'Upon seeing the monstrosity that is the mansion, and the twisted tree that rose up from the ground, you decided to bolt and get away from this place as soon as possible. Quickly you got into your vehicle and slammed on the gas, but in such haste you ended up running over a stranger that also decided to leave the mansion. Without a doubt your insurance premiums are going up. What a shame.',
       options: [
         {text: 'Try', navigateToIdx: 0},
         {text: 'Again', navigateToIdx: 0},
