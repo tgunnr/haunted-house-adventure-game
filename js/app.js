@@ -92,6 +92,11 @@ imgArray[22].src = '../assets/img/authorEnding.png'
 imgArray[23] = new Image()
 imgArray[23].src = '../assets/img/medicineCabinet.png'
 
+// Library img assets
+
+imgArray[24] = new Image()
+imgArray[24].src = '../assets/img/fallingBooks'
+
 // Button/ story choices
 
 const prompts = [
@@ -145,7 +150,7 @@ const prompts = [
         question: 'As you enter the library, you are filled with a sense of bewilderment over its vast collection. What will you do while you are here?',
         options: [
           {text: 'Search for a secret passageway', navigateToIdx: 0},
-          {text: 'Investigate the bookshelves', navigateToIdx: 0},
+          {text: 'Investigate the bookshelves', navigateToIdx: 24},
           {text: 'Investigate the fireplace', navigateToIdx: 0}
         ]
     },
@@ -333,15 +338,15 @@ const prompts = [
         ]
       },
 
-    //  Library pathway
+    //  Library ending pathway
 
       {
-        id: 0,
-        question: 'Are you ready to enter?',
+        id: 24,
+        question: 'The collection of books is bewildering. Books of all kinds of genres, time periods, and cultures line the shelves. The bookworm in you is salivating at what lies before you. Unfortunately the books however have a different idea of how they want to spend their time. The moment you decide to pick out a book, all the books decide to launch forward, crushing you to death under a massive pile of rebellious books.',
         options: [
-          {text: 'Enter', navigateToIdx: 1},
-          {text: 'Leave', navigateToIdx: 2},
-          {text: 'Run Away', navigateToIdx: 3}
+          {text: 'Enter', navigateToIdx: 0},
+          {text: 'Leave', navigateToIdx: 0},
+          {text: 'Run Away', navigateToIdx: 0}
         ]
       },
   ]
