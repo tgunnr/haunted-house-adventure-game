@@ -62,6 +62,14 @@ imgArray[14].src = '../assets/img/balcony.png'
 imgArray[15] = new Image()
 imgArray[15].src = '../assets/img/batSwirl.png'
 
+// Stairs -> Nap img asset
+
+imgArray[16] = new Image()
+imgArray[16].src = '../assets/img/bed.png'
+
+imgArray[17] = new Image()
+imgArray[17].src = '../assets/img/bed.png'
+
 // Button/ story choices
 
 const prompts = [
@@ -145,8 +153,8 @@ const prompts = [
         question: "For being a guest room, it is larger than most small apartments, yet embarrassingly cleaner than your place. Bats swirl around the room, disturbed by your presence, and you swear you can hear whispers from next door. Isn’t this place supposed to be abandoned?",
         options: [
           {text: 'Shoo the bats away', navigateToIdx: 15},
-          {text: 'Enter the room next door', navigateToIdx: 0},
-          {text: 'Take a nap', navigateToIdx: 0}
+          {text: 'Enter the room next door', navigateToIdx: 7},
+          {text: 'Take a nap', navigateToIdx: 16}
         ]
       },
       {
@@ -211,6 +219,7 @@ const prompts = [
       },
 
     //   Stairs -> Bat end
+
     {
         id: 15,
         question: "You decide to shoo the bats away because they keep getting in the way of your investigation. However the bats are not pleased at being disturbed. Out of pure spite, the bats begin to swirl around you and consume everything in sight. They don’t even leave bones behind when they are done.",
@@ -218,6 +227,27 @@ const prompts = [
           {text: 'Try', navigateToIdx: 0},
           {text: 'Again', navigateToIdx: 0},
           {text: '?', navigateToIdx: 0}
+        ]
+      },
+
+    //   Stairs -> Nap loop
+
+    {
+        id: 16,
+        question: 'Despite all good common sense telling you it is a bad idea to take a nap in a dilapidated house that has been abandoned for years, you do it anyway. Feeling refreshed and somehow still alive, you move on.',
+        options: [
+          {text: 'Take another nap', navigateToIdx: 16},
+          {text: 'Take a deep rest', navigateToIdx: 17},
+          {text: 'Go back', navigateToIdx: 8}
+        ]
+      },
+      {
+        id: 17,
+        question: "If taking a nap wasn’t already an incredibly bad idea, you decide that you should just go for broke and sleep off the rest of your fatigue. How is it you have made it unharmed through all this will forever by a mystery.",
+        options: [
+          {text: 'Take a nap', navigateToIdx: 16},
+          {text: 'Take a deep rest again', navigateToIdx: 17},
+          {text: 'Go back', navigateToIdx: 8}
         ]
       },
   ]
