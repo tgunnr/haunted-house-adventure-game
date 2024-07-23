@@ -134,6 +134,15 @@ const prompts = [
           {text: 'Run Away', navigateToIdx: 3}
         ]
       },
+      {
+        id: 0,
+        question: 'Are you ready to enter?',
+        options: [
+          {text: 'Enter', navigateToIdx: 1},
+          {text: 'Leave', navigateToIdx: 2},
+          {text: 'Run Away', navigateToIdx: 3}
+        ]
+      },
   ]
   
   const questionEl = document.querySelector('#question')
