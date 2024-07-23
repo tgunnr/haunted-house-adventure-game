@@ -57,6 +57,11 @@ imgArray[13].src = '../assets/img/bathtubHand.png'
 imgArray[14] = new Image()
 imgArray[14].src = '../assets/img/balcony.png'
 
+// Stairs -> Bat img asset
+
+imgArray[15] = new Image()
+imgArray[15].src = '../assets/img/batSwirl.png'
+
 // Button/ story choices
 
 const prompts = [
@@ -139,7 +144,7 @@ const prompts = [
         id: 8,
         question: "For being a guest room, it is larger than most small apartments, yet embarrassingly cleaner than your place. Bats swirl around the room, disturbed by your presence, and you swear you can hear whispers from next door. Isn’t this place supposed to be abandoned?",
         options: [
-          {text: 'Shoo the bats away', navigateToIdx: 0},
+          {text: 'Shoo the bats away', navigateToIdx: 15},
           {text: 'Enter the room next door', navigateToIdx: 0},
           {text: 'Take a nap', navigateToIdx: 0}
         ]
@@ -198,6 +203,17 @@ const prompts = [
       {
         id: 14,
         question: 'You enter the balcony and out nowhere appears a giant bat. There is no escape. It grabs you and flies off to its den.',
+        options: [
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
+        ]
+      },
+
+    //   Stairs -> Bat end
+    {
+        id: 15,
+        question: "You decide to shoo the bats away because they keep getting in the way of your investigation. However the bats are not pleased at being disturbed. Out of pure spite, the bats begin to swirl around you and consume everything in sight. They don’t even leave bones behind when they are done.",
         options: [
           {text: 'Try', navigateToIdx: 0},
           {text: 'Again', navigateToIdx: 0},
