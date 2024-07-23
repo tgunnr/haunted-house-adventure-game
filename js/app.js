@@ -106,7 +106,7 @@ const prompts = [
     },
     {
       id: 1,
-      question: "You have entered the mansion to find your missing partner. Where will you go first?",
+      question: "You have entered the mansion to prove it's empty. Where will you go first?",
       options: [
         {text: 'Stairs', navigateToIdx: 4},
         {text: 'Library', navigateToIdx: 5},
@@ -330,6 +330,18 @@ const prompts = [
           {text: 'Try', navigateToIdx: 0},
           {text: 'Again', navigateToIdx: 0},
           {text: '?', navigateToIdx: 0}
+        ]
+      },
+
+    //  Library pathway
+
+      {
+        id: 0,
+        question: 'Are you ready to enter?',
+        options: [
+          {text: 'Enter', navigateToIdx: 1},
+          {text: 'Leave', navigateToIdx: 2},
+          {text: 'Run Away', navigateToIdx: 3}
         ]
       },
   ]
