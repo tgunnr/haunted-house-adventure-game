@@ -38,6 +38,9 @@ imgArray[8].src = '../assets/img/guestRoom.png'
 imgArray[9] = new Image()
 imgArray[9].src = '../assets/img/abyss.png'
 
+imgArray[10] = new Image()
+imgArray[10].src = '../assets/img/bathroom.png'
+
 // Button/ story choices
 
 const prompts = [
@@ -111,36 +114,36 @@ const prompts = [
         id: 7,
         question: 'At one point the master bedroom was a sight to behold, unfortunately that time has long since passed. What secrets lie waiting for you?',
         options: [
-          {text: 'Enter the bathroom', navigateToIdx: 0},
+          {text: 'Enter the bathroom', navigateToIdx: 10},
           {text: 'Pickup the diary on the bed', navigateToIdx: 0},
           {text: 'Open the balcony', navigateToIdx: 0}
         ]
     },
     {
         id: 8,
-        question: 'Are you ready to enter?',
+        question: "For being a guest room, it is larger than most small apartments, yet embarrassingly cleaner than your place. Bats swirl around the room, disturbed by your presence, and you swear you can hear whispers from next door. Isn’t this place supposed to be abandoned?",
         options: [
-          {text: 'Enter', navigateToIdx: 1},
-          {text: 'Leave', navigateToIdx: 2},
-          {text: 'Run Away', navigateToIdx: 3}
+          {text: 'Shoo the bats away', navigateToIdx: 0},
+          {text: 'Enter the room next door', navigateToIdx: 0},
+          {text: 'Take a nap', navigateToIdx: 0}
         ]
       },
       {
         id: 9,
-        question: 'Are you ready to enter?',
+        question: 'You open the door at the end of the hallway only to find a massive void on the other side. Try as you may, you cannot close the door and escape the forces pulling you in.',
         options: [
-          {text: 'Enter', navigateToIdx: 1},
-          {text: 'Leave', navigateToIdx: 2},
-          {text: 'Run Away', navigateToIdx: 3}
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
         ]
       },
       {
-        id: 0,
-        question: 'Are you ready to enter?',
+        id: 10,
+        question: 'You enter the dilapidated bathroom. Somehow it’s not as bad as some of the restrooms at the clubs you have been to.',
         options: [
-          {text: 'Enter', navigateToIdx: 1},
-          {text: 'Leave', navigateToIdx: 2},
-          {text: 'Run Away', navigateToIdx: 3}
+          {text: 'Search the medicine cabinet', navigateToIdx: 0},
+          {text: 'Search the bathtub', navigateToIdx: 0},
+          {text: 'Go back', navigateToIdx: 0}
         ]
       },
       {
