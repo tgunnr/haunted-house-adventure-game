@@ -38,6 +38,8 @@ imgArray[8].src = '../assets/img/guestRoom.png'
 imgArray[9] = new Image()
 imgArray[9].src = '../assets/img/abyss.png'
 
+// Stairs -> Bathroom img assets
+
 imgArray[10] = new Image()
 imgArray[10].src = '../assets/img/bathroom.png'
 
@@ -46,6 +48,9 @@ imgArray[11].src = '../assets/img/bathtub.png'
 
 imgArray[12] = new Image()
 imgArray[12].src = '../assets/img/bathtubCreature.png'
+
+imgArray[13] = new Image()
+imgArray[13].src = '../assets/img/bathtubHand.png'
 
 // Button/ story choices
 
@@ -143,6 +148,9 @@ const prompts = [
           {text: '?', navigateToIdx: 0}
         ]
       },
+
+      // Stairs -> Bathroom pathway
+
       {
         id: 10,
         question: 'You enter the dilapidated bathroom. Somehow it’s not as bad as some of the restrooms at the clubs you have been to.',
@@ -156,8 +164,8 @@ const prompts = [
         id: 11,
         question: 'Despite the surroundings, the bathtub not only appears clean, but it is filled with fresh hot water and bubbles. A bath does sound nice right about now.',
         options: [
-          {text: 'Drain the tub', navigateToIdx: 0},
-          {text: 'Take a bath', navigateToIdx: 0},
+          {text: 'Drain the tub', navigateToIdx: 12},
+          {text: 'Test the water', navigateToIdx: 13},
           {text: 'Go back', navigateToIdx: 10}
         ]
       },
@@ -171,12 +179,12 @@ const prompts = [
         ]
       },
       {
-        id: 0,
-        question: 'Are you ready to enter?',
+        id: 13,
+        question: 'You find it odd that the bathtub is full of fresh hot water. You decide to test the water and dip your fingers into the water, but as soon as your fingers break the water, a hand grabs you and pulls you in. Unable to hold your breath for long, everything goes black.',
         options: [
-          {text: 'Enter', navigateToIdx: 1},
-          {text: 'Leave', navigateToIdx: 2},
-          {text: 'Run Away', navigateToIdx: 3}
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
         ]
       },
   ]
