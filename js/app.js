@@ -52,6 +52,11 @@ imgArray[12].src = '../assets/img/bathtubCreature.png'
 imgArray[13] = new Image()
 imgArray[13].src = '../assets/img/bathtubHand.png'
 
+// Stairs -> Balcony img asset
+
+imgArray[14] = new Image()
+imgArray[14].src = '../assets/img/balcony.png'
+
 // Button/ story choices
 
 const prompts = [
@@ -127,7 +132,7 @@ const prompts = [
         options: [
           {text: 'Enter the bathroom', navigateToIdx: 10},
           {text: 'Pickup the diary on the bed', navigateToIdx: 0},
-          {text: 'Open the balcony', navigateToIdx: 0}
+          {text: 'Open the balcony', navigateToIdx: 14}
         ]
     },
     {
@@ -181,6 +186,18 @@ const prompts = [
       {
         id: 13,
         question: 'You find it odd that the bathtub is full of fresh hot water. You decide to test the water and dip your fingers into the water, but as soon as your fingers break the water, a hand grabs you and pulls you in. Unable to hold your breath for long, everything goes black.',
+        options: [
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
+        ]
+      },
+
+    //   Stairs -> Balcony end
+
+      {
+        id: 14,
+        question: 'You enter the balcony and out nowhere appears a giant bat. There is no escape. It grabs you and flies off to its den.',
         options: [
           {text: 'Try', navigateToIdx: 0},
           {text: 'Again', navigateToIdx: 0},
