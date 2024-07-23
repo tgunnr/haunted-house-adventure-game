@@ -70,6 +70,28 @@ imgArray[16].src = '../assets/img/bed.png'
 imgArray[17] = new Image()
 imgArray[17].src = '../assets/img/bed.png'
 
+// Stairs -> Diary pathway
+
+imgArray[18] = new Image()
+imgArray[18].src = '../assets/img/masquerade.png'
+
+imgArray[19] = new Image()
+imgArray[19].src = '../assets/img/masqueradeDance.png'
+
+imgArray[20] = new Image()
+imgArray[20].src = '../assets/img/masqueradeBuffet.png'
+
+imgArray[21] = new Image()
+imgArray[21].src = '../assets/img/masqueradeDiaryOwner.png'
+
+imgArray[22] = new Image()
+imgArray[22].src = '../assets/img/authorEnding.png'
+
+// Stairs -> Medicine Cabinet end
+
+imgArray[23] = new Image()
+imgArray[23].src = '../assets/img/medicineCabinet.png'
+
 // Button/ story choices
 
 const prompts = [
@@ -144,7 +166,7 @@ const prompts = [
         question: 'At one point the master bedroom was a sight to behold, unfortunately that time has long since passed. What secrets lie waiting for you?',
         options: [
           {text: 'Enter the bathroom', navigateToIdx: 10},
-          {text: 'Pickup the diary on the bed', navigateToIdx: 0},
+          {text: 'Pickup the diary on the bed', navigateToIdx: 18},
           {text: 'Open the balcony', navigateToIdx: 14}
         ]
     },
@@ -173,7 +195,7 @@ const prompts = [
         id: 10,
         question: 'You enter the dilapidated bathroom. Somehow it’s not as bad as some of the restrooms at the clubs you have been to.',
         options: [
-          {text: 'Search the medicine cabinet', navigateToIdx: 0},
+          {text: 'Search the medicine cabinet', navigateToIdx: 23},
           {text: 'Search the bathtub', navigateToIdx: 11},
           {text: 'Go back', navigateToIdx: 7}
         ]
@@ -248,6 +270,66 @@ const prompts = [
           {text: 'Take a nap', navigateToIdx: 16},
           {text: 'Take a deep rest again', navigateToIdx: 17},
           {text: 'Go back', navigateToIdx: 8}
+        ]
+      },
+
+    //   Stairs -> Diary pathway
+
+      {
+        id: 18,
+        question: 'You open the diary and immediately you are transported to an extravagant masquerade.',
+        options: [
+          {text: 'Stay and dance', navigateToIdx: 19},
+          {text: 'Eat the food', navigateToIdx: 20},
+          {text: 'Talk to someone', navigateToIdx: 21}
+        ]
+      },
+      {
+        id: 19,
+        question: 'Everything looks so grand, and when was the last time anyone held a masquerade? You decide to join in on the festivities. Never have you had such fun, and the longer you stay, the less you desire to ever leave, and before you realize it, you are now just another character in this diary with no hope for escape.',
+        options: [
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
+        ]
+      },
+      {
+        id: 20,
+        question: 'The food smelled absolutely delicious. What was the harm in trying some? Never have you had anything as delicious as this. You were so enamored by this buffet that any time you had to escape long since passed. Forever trapping you in this diary.',
+        options: [
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
+        ]
+      },
+      {
+        id: 21,
+        question: 'You try and speak to anyone and everyone there, but they all ignore you, until a woman comes up to you that introduces herself as the Diary Owner. She explains how she wanted to relive the best moment of her life over and over again, and hired a sorceress to enchant her diary. You are invited to stay and enjoy yourself, but warns that the door to leave is closing.',
+        options: [
+          {text: 'Stay and dance', navigateToIdx: 19},
+          {text: 'Eat the food', navigateToIdx: 20},
+          {text: 'Leave', navigateToIdx: 22}
+        ]
+      },
+      {
+        id: 22,
+        question: 'Upon leaving the diary you decide to leave the mansion and never return. When you have had time to take a moment to rest, it occurs to you to write your experiences from within the diary as a novel, fiction of course. Who would ever believe this? The book shoots up to the top of various bestseller lists, making you a popular and well respected author.',
+        options: [
+          {text: 'You', navigateToIdx: 0},
+          {text: 'Made', navigateToIdx: 0},
+          {text: 'It!', navigateToIdx: 0}
+        ]
+      },
+
+    //  Stairs -> Medicine Cabinet end
+
+      {
+        id: 23,
+        question: 'You open the medicine cabinet and immediately spiders jump out at you. In a matter of seconds hundreds, if not thousands, of spiders are wrapping you in silk, preparing you for their next meal.',
+        options: [
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
         ]
       },
   ]
