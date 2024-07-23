@@ -41,6 +41,12 @@ imgArray[9].src = '../assets/img/abyss.png'
 imgArray[10] = new Image()
 imgArray[10].src = '../assets/img/bathroom.png'
 
+imgArray[11] = new Image()
+imgArray[11].src = '../assets/img/bathtub.png'
+
+imgArray[12] = new Image()
+imgArray[12].src = '../assets/img/bathtubCreature.png'
+
 // Button/ story choices
 
 const prompts = [
@@ -142,26 +148,26 @@ const prompts = [
         question: 'You enter the dilapidated bathroom. Somehow it’s not as bad as some of the restrooms at the clubs you have been to.',
         options: [
           {text: 'Search the medicine cabinet', navigateToIdx: 0},
-          {text: 'Search the bathtub', navigateToIdx: 0},
-          {text: 'Go back', navigateToIdx: 0}
+          {text: 'Search the bathtub', navigateToIdx: 11},
+          {text: 'Go back', navigateToIdx: 7}
         ]
       },
       {
-        id: 0,
-        question: 'Are you ready to enter?',
+        id: 11,
+        question: 'Despite the surroundings, the bathtub not only appears clean, but it is filled with fresh hot water and bubbles. A bath does sound nice right about now.',
         options: [
-          {text: 'Enter', navigateToIdx: 1},
-          {text: 'Leave', navigateToIdx: 2},
-          {text: 'Run Away', navigateToIdx: 3}
+          {text: 'Drain the tub', navigateToIdx: 0},
+          {text: 'Take a bath', navigateToIdx: 0},
+          {text: 'Go back', navigateToIdx: 10}
         ]
       },
       {
-        id: 0,
-        question: 'Are you ready to enter?',
+        id: 12,
+        question: 'If video games have taught you anything, there should be a key item if you drain the tub. Unfortunately there is a creature made almost entirely of tentacles residing in the water. Of which this fact was discovered too late and the creature immediately latches on to you. Everything goes black, never to awake again.',
         options: [
-          {text: 'Enter', navigateToIdx: 1},
-          {text: 'Leave', navigateToIdx: 2},
-          {text: 'Run Away', navigateToIdx: 3}
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
         ]
       },
       {
