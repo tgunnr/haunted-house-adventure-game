@@ -32,7 +32,7 @@ import {imgArray} from './img.js'
     buttonA.textContent = currPrompt.options[0].text
     buttonB.textContent = currPrompt.options[1].text
     buttonC.textContent = currPrompt.options[2].text
-    img.src = imgArray[currPrompt.options].src
+    img.src = imgArray[currPromptIdx].src
   }
   
   function handleClickButtonA() {
