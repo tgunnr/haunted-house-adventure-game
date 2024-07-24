@@ -95,7 +95,7 @@ imgArray[23].src = '../assets/img/medicineCabinet.png'
 // Library img assets
 
 imgArray[24] = new Image()
-imgArray[24].src = '../assets/img/fallingBooks'
+imgArray[24].src = '../assets/img/fallingBooks.png'
 
 // Button/ story choices
 
