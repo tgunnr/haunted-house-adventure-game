@@ -93,7 +93,10 @@ imgArray[24].src = '../assets/img/fallingBooks.png'
 
 // Library -> Secret Passageway pathway
 
-imgArray[25] =new Image()
+imgArray[25] = new Image()
 imgArray[25].src = '../assets/img/cellar.png'
+
+imgArray[26] = new Image()
+imgArray[26].src = '../assets/img/cellarExorcism.png'
 
 export {imgArray}
