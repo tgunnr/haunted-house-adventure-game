@@ -48,7 +48,7 @@ const prompts = [
         id: 5,
         question: 'As you enter the library, you are filled with a sense of bewilderment over its vast collection. What will you do while you are here?',
         options: [
-          {text: 'Search for a secret passageway', navigateToIdx: 0},
+          {text: 'Search for a secret passageway', navigateToIdx: 25},
           {text: 'Investigate the bookshelves', navigateToIdx: 24},
           {text: 'Investigate the fireplace', navigateToIdx: 0}
         ]
@@ -246,6 +246,17 @@ const prompts = [
           {text: 'Enter', navigateToIdx: 0},
           {text: 'Leave', navigateToIdx: 0},
           {text: 'Run Away', navigateToIdx: 0}
+        ]
+      },
+
+    //   Library -> Secret Passageway pathway
+      {
+        id: 25,
+        question: 'As you are searching for a secret passage, you accidentally bump into a wall lamp the turns 90 degrees to reveal a hidden cellar. Ghostly wailing emanates from the newly opened passage. Inside reveals a horde of ghosts drinking the finest aged wine this side of the Mississippi.',
+        options: [
+          {text: 'Drink the wine', navigateToIdx: 0},
+          {text: 'Exorcise the ghosts', navigateToIdx: 0},
+          {text: 'Speak to the ghosts.', navigateToIdx: 0}
         ]
       },
     ]

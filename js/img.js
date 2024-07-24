@@ -91,6 +91,9 @@ imgArray[23].src = '../assets/img/medicineCabinet.png'
 imgArray[24] = new Image()
 imgArray[24].src = '../assets/img/fallingBooks.png'
 
-console.log(imgArray);
+// Library -> Secret Passageway pathway
+
+imgArray[25] =new Image()
+imgArray[25].src = '../assets/img/cellar.png'
 
 export {imgArray}
