@@ -256,7 +256,7 @@ const prompts = [
         options: [
           {text: 'Drink the wine', navigateToIdx: 27},
           {text: 'Exorcise the ghosts', navigateToIdx: 26},
-          {text: 'Speak to the ghosts.', navigateToIdx: 0}
+          {text: 'Speak to the ghosts.', navigateToIdx: 28}
         ]
       },
       {
@@ -275,6 +275,15 @@ const prompts = [
           {text: 'Try', navigateToIdx: 0},
           {text: 'Again', navigateToIdx: 0},
           {text: '?', navigateToIdx: 0}
+        ]
+      },
+      {
+        id: 28,
+        question: 'Sheepishly you begin a conversation with the ghosts, public speaking was never your strong suit, and you discover you have quite the knack for speaking to a crowd. This gives you an idea for a career change, but first you must leave this place, though maybe once you have had a chance to talk to every ghost in this room. After all, that would be rude.',
+        options: [
+          {text: 'Leave', navigateToIdx: 29},
+          {text: 'Drink the wine', navigateToIdx: 27},
+          {text: 'Go back to the Library', navigateToIdx: 5}
         ]
       },
     ]
