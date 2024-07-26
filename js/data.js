@@ -309,7 +309,7 @@ const prompts = [
       },
       {
         id: 31,
-        question: 'Delightfully the fridge is full of small adorable ghosts. You pull your phone out so you can take a picture. Unfortunately before you can do so the small ghosts gang up on you and demand your wallet and your phone, or you will never leave this place alive. You comply, only to end up being the victim of identity fraud. You lose everything.',
+        question: 'Delightfully the fridge is full of small adorable ghosts. You pull your phone out so you can take a picture. Unfortunately before you can do so, the small ghosts gang up on you and demand your wallet and your phone, or you will never leave this place alive. You comply, only to end up being the victim of identity fraud. You lose everything.',
         options: [
           {text: 'Try', navigateToIdx: 0},
           {text: 'Again', navigateToIdx: 0},
