@@ -336,11 +336,11 @@ const prompts = [
       },
       {
         id: 34,
-        question: 'Are you ready to enter?',
+        question: 'You burst through the door at the end of the corridor only to find yourself in the backyard. You do not hesitate to get out and go straight home. Despite the literal danger you were under just moments ago, it was exhilarating. You decide to team up with a friend who is a well known influencer and begin live streaming your ghost hunts. In an instant you become a big online hit.',
         options: [
-          {text: 'Enter', navigateToIdx: 1},
-          {text: 'Leave', navigateToIdx: 2},
-          {text: 'Run Away', navigateToIdx: 3}
+          {text: 'You', navigateToIdx: 0},
+          {text: 'Made', navigateToIdx: 0},
+          {text: 'It', navigateToIdx: 0}
         ]
       },
     ]
