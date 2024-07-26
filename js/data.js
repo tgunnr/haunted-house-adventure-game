@@ -58,7 +58,7 @@ const prompts = [
         question: 'The kitchen is somehow both smaller and larger than you were expecting. What is even more surprising is the availability of fresh food. Now who baked the pie on the counter?',
         options: [
           {text: 'Eat the pie', navigateToIdx: 30},
-          {text: 'Investigate the pantry', navigateToIdx: 0},
+          {text: 'Investigate the pantry', navigateToIdx: 32},
           {text: 'Open the fridge', navigateToIdx: 31}
         ]
     },
@@ -252,7 +252,7 @@ const prompts = [
     //   Library -> Secret Passageway pathway
       {
         id: 25,
-        question: 'As you are searching for a secret passage, you accidentally bump into a wall lamp the turns 90 degrees to reveal a hidden cellar. Ghostly wailing emanates from the newly opened passage. Inside reveals a horde of ghosts drinking the finest aged wine this side of the Mississippi.',
+        question: 'As you are searching for a secret passage, you accidentally bump into a wall lamp that turns 90 degrees to reveal a hidden cellar. Ghostly wailing emanates from the newly opened passage. Inside reveals a horde of ghosts drinking the finest aged wine this side of the Mississippi.',
         options: [
           {text: 'Drink the wine', navigateToIdx: 27},
           {text: 'Exorcise the ghosts', navigateToIdx: 26},
@@ -314,6 +314,24 @@ const prompts = [
           {text: 'Try', navigateToIdx: 0},
           {text: 'Again', navigateToIdx: 0},
           {text: '?', navigateToIdx: 0}
+        ]
+      },
+      {
+        id: 32,
+        question: 'You open the the pantry door only to find a long corridor hidden on the other side. Walking in slowly, you begin to explore. As you made it halfway through you see ghost appear where you entered, and immediately begins to chase you, where will you go?',
+        options: [
+          {text: 'Door on the right', navigateToIdx: 33},
+          {text: 'Door on the left', navigateToIdx: 33},
+          {text: 'Door at the end', navigateToIdx: 34}
+        ]
+      },
+      {
+        id: 0,
+        question: 'Are you ready to enter?',
+        options: [
+          {text: 'Enter', navigateToIdx: 1},
+          {text: 'Leave', navigateToIdx: 2},
+          {text: 'Run Away', navigateToIdx: 3}
         ]
       },
     ]
