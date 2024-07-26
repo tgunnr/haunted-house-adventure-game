@@ -128,6 +128,6 @@ imgArray[34].src = '../assets/img/ghostHunters.png'
 // Library -> Fireplace img
 
 imgArray[35] = new Image()
-imgArray[35].src = '../assets/img/fireplace.png'
+imgArray[35].src = './assets/img/fireplace.png'
 
 export {imgArray}
