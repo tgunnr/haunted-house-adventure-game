@@ -1,8 +1,8 @@
 # Haunted House Adventure Game
 This is a choose your own adventure game by Jonathan Cabrera.
 
-## Pseudocode
-[Planning](https://docs.google.com/document/d/1SV8tzShGqxrGUyjIsjFcwTeC6qXYId20YHaXlfjx8yI/edit?usp=sharing)
+## Planning material
+[Pseudocode](https://docs.google.com/document/d/1SV8tzShGqxrGUyjIsjFcwTeC6qXYId20YHaXlfjx8yI/edit?usp=sharing)
 
 ## How to play
 1. Choose any of the top three buttons to make your decision and continue the story.
