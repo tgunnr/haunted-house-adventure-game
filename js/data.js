@@ -50,7 +50,7 @@ const prompts = [
         options: [
           {text: 'Search for a secret passageway', navigateToIdx: 25},
           {text: 'Investigate the bookshelves', navigateToIdx: 24},
-          {text: 'Investigate the fireplace', navigateToIdx: 0}
+          {text: 'Investigate the fireplace', navigateToIdx: 35}
         ]
     },
     {
@@ -343,6 +343,18 @@ const prompts = [
           {text: 'It', navigateToIdx: 0}
         ]
       },
+
+    // library -> fireplace end
+
+      {
+        id: 35,
+        question: 'The fireplace is absolutely grand. Currently there is no flame, so you decide to check it out, It appears there is something in the ashes, but before you can dig it out, the fireplace erupts into flames swallowing you whole.',
+        options: [
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
+        ]
+      }
     ]
 
   export {prompts}
