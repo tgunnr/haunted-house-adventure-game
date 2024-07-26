@@ -243,9 +243,9 @@ const prompts = [
         id: 24,
         question: 'The collection of books is bewildering. Books of all kinds of genres, time periods, and cultures line the shelves. The bookworm in you is salivating at what lies before you. Unfortunately the books however have a different idea of how they want to spend their time. The moment you decide to pick out a book, all the books decide to launch forward, crushing you to death under a massive pile of rebellious books.',
         options: [
-          {text: 'Enter', navigateToIdx: 0},
-          {text: 'Leave', navigateToIdx: 0},
-          {text: 'Run Away', navigateToIdx: 0}
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
         ]
       },
 
