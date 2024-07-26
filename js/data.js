@@ -286,6 +286,15 @@ const prompts = [
           {text: 'Go back to the Library', navigateToIdx: 5}
         ]
       },
+      {
+        id: 29,
+        question: 'After you finish your conversations with these cellar ghosts, you politely excuse yourself and head straight home. Once home you call up your cousin in showbiz and pitch your idea of a haunted talk show inspired by the cellar ghosts. He loves the idea and in no time the show becomes a massive hit.',
+        options: [
+          {text: 'You', navigateToIdx: 0},
+          {text: 'Made', navigateToIdx: 0},
+          {text: 'It!', navigateToIdx: 0}
+        ]
+      },
     ]
 
   export {prompts}
