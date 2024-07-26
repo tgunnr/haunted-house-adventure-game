@@ -119,4 +119,7 @@ imgArray[31].src = '../assets/img/fridge.png'
 imgArray[32] = new Image()
 imgArray[32].src = '../assets/img/corridor.png'
 
+imgArray[33] = new Image()
+imgArray[33].src = '../assets/img/caught.png'
+
 export {imgArray}

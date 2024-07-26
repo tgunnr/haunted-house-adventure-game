@@ -326,7 +326,16 @@ const prompts = [
         ]
       },
       {
-        id: 0,
+        id: 33,
+        question: 'You burst into the room, but it is already too late, the ghost catches you, and you feel the life draining out of your body. Everything goes black.',
+        options: [
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
+        ]
+      },
+      {
+        id: 34,
         question: 'Are you ready to enter?',
         options: [
           {text: 'Enter', navigateToIdx: 1},
