@@ -108,4 +108,9 @@ imgArray[28].src = '../assets/img/ghostAudience.png'
 imgArray[29] = new Image()
 imgArray[29].src = '../assets/img/talkShow.png'
 
+// Kitchen pathway
+
+imgArray[30] = new Image()
+imgArray[30].src = '../assets/img/pie.png'
+
 export {imgArray}

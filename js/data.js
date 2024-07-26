@@ -57,7 +57,7 @@ const prompts = [
         id: 6,
         question: 'The kitchen is somehow both smaller and larger than you were expecting. What is even more surprising is the availability of fresh food. Now who baked the pie on the counter?',
         options: [
-          {text: 'Eat the pie', navigateToIdx: 0},
+          {text: 'Eat the pie', navigateToIdx: 30},
           {text: 'Investigate the pantry', navigateToIdx: 0},
           {text: 'Open the fridge', navigateToIdx: 0}
         ]
@@ -293,6 +293,18 @@ const prompts = [
           {text: 'You', navigateToIdx: 0},
           {text: 'Made', navigateToIdx: 0},
           {text: 'It!', navigateToIdx: 0}
+        ]
+      },
+
+    //   Kitchen pathway
+
+      {
+        id: 30,
+        question: 'Overwhelmed by the scent of the pie before you, you cannot help but dig in. Despite the delicious scent, the pie does not taste quite right. You fall into a deep sleep, perhaps a prince will one day save you, but not anytime soon.',
+        options: [
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
         ]
       },
     ]
