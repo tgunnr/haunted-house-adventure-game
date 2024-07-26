@@ -8,7 +8,7 @@ import {imgArray} from './img.js'
   const buttonB = document.querySelector('#btn2')
   const buttonC = document.querySelector('#btn3')
   const resetButton = document.querySelector('#reset')
-  const img = document.querySelector('.mainImage')
+  const img = document.querySelector('.main-image')
   
   buttonA.addEventListener('click', handleClickButtonA)
   buttonB.addEventListener('click', handleClickButtonB)
