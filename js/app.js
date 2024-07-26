@@ -1,7 +1,9 @@
+// Imports
+
 import {prompts} from './data.js'
 import {imgArray} from './img.js'
 
-// console.log(imgArray[1])
+// Cached element references
 
   const questionEl = document.querySelector('#question')
   const buttonA = document.querySelector('#btn1')
@@ -10,14 +12,19 @@ import {imgArray} from './img.js'
   const resetButton = document.querySelector('#reset')
   const img = document.querySelector('.main-image')
   
+// Event listeners
+
   buttonA.addEventListener('click', handleClickButtonA)
   buttonB.addEventListener('click', handleClickButtonB)
   buttonC.addEventListener('click', handleClickButtonC)
   resetButton.addEventListener('click', handleClickReset)
   
-  
+// Variables
+
   let currPromptIdx
   let currPrompt 
+
+// Functions
   
   function init() {
     currPromptIdx = 0
