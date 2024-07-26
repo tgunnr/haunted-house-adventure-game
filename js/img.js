@@ -113,4 +113,7 @@ imgArray[29].src = '../assets/img/talkShow.png'
 imgArray[30] = new Image()
 imgArray[30].src = '../assets/img/pie.png'
 
+imgArray[31] = new Image()
+imgArray[31].src = '../assets/img/fridge.png'
+
 export {imgArray}

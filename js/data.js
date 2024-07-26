@@ -59,7 +59,7 @@ const prompts = [
         options: [
           {text: 'Eat the pie', navigateToIdx: 30},
           {text: 'Investigate the pantry', navigateToIdx: 0},
-          {text: 'Open the fridge', navigateToIdx: 0}
+          {text: 'Open the fridge', navigateToIdx: 31}
         ]
     },
 
@@ -301,6 +301,15 @@ const prompts = [
       {
         id: 30,
         question: 'Overwhelmed by the scent of the pie before you, you cannot help but dig in. Despite the delicious scent, the pie does not taste quite right. You fall into a deep sleep, perhaps a prince will one day save you, but not anytime soon.',
+        options: [
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
+        ]
+      },
+      {
+        id: 31,
+        question: 'Delightfully the fridge is full of small adorable ghosts. You pull your phone out so you can take a picture. Unfortunately before you can do so the small ghosts gang up on you and demand your wallet and your phone, or you will never leave this place alive. You comply, only to end up being the victim of identity fraud. You lose everything.',
         options: [
           {text: 'Try', navigateToIdx: 0},
           {text: 'Again', navigateToIdx: 0},
