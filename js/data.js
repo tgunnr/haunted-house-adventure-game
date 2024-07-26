@@ -254,14 +254,23 @@ const prompts = [
         id: 25,
         question: 'As you are searching for a secret passage, you accidentally bump into a wall lamp the turns 90 degrees to reveal a hidden cellar. Ghostly wailing emanates from the newly opened passage. Inside reveals a horde of ghosts drinking the finest aged wine this side of the Mississippi.',
         options: [
-          {text: 'Drink the wine', navigateToIdx: 0},
-          {text: 'Exorcise the ghosts', navigateToIdx: 0},
+          {text: 'Drink the wine', navigateToIdx: 27},
+          {text: 'Exorcise the ghosts', navigateToIdx: 26},
           {text: 'Speak to the ghosts.', navigateToIdx: 0}
         ]
       },
       {
         id: 26,
         question: 'Clearly these ghosts need to be evicted from the property. You conveniently find a rather ornate cross and begin chanting the first prayer you can think of, “Heavenly Father, in the name of…”, and before you can finish your prayer, the ghosts immediately grab you and shove you into an empty barrel. Obviously you offended them and they went back sipping their 200 year old wine in peace. Shame they forgot to let you out, leaving you to suffocate in a wine scented cask.',
+        options: [
+          {text: 'Try', navigateToIdx: 0},
+          {text: 'Again', navigateToIdx: 0},
+          {text: '?', navigateToIdx: 0}
+        ]
+      },
+      {
+        id: 27,
+        question: 'This bottle of wine is calling for you, maybe literally, and it has been oh so long since you have had anything to drink. You take a sip, and it is the most delicious wine you have ever had. You bump into something only to realize it is your lifeless body. Now you are just another ghost in this cellar. Might as well get this party started.',
         options: [
           {text: 'Try', navigateToIdx: 0},
           {text: 'Again', navigateToIdx: 0},

@@ -99,4 +99,7 @@ imgArray[25].src = '../assets/img/cellar.png'
 imgArray[26] = new Image()
 imgArray[26].src = '../assets/img/cellarExorcism.png'
 
+imgArray[27] = new Image()
+imgArray[27].src = '../assets/img/poisonWine.png'
+
 export {imgArray}
